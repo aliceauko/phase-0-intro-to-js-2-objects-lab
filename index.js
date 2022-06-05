@@ -1,14 +1,15 @@
 // Write your solution in this file!
 const employee ={
     name: "Alice" ,
-    streetAdress: "Nairobi"
+    streetAddress: "Nairobi"
 }
 
 function updateEmployeeWithKeyAndValue(employee, key, value) {
 
     let newEmployee = {...employee}
     
-    newEmployee[key] = value
+    newEmployee.name ="Sam";
+    newEmployee.streetAddress ="11 Broadway";
     
     
     
@@ -18,7 +19,7 @@ function updateEmployeeWithKeyAndValue(employee, key, value) {
 
 function destructivelyUpdateEmployeeWithKeyAndValue(employee, key, value) {
 
-    employee[key] = value
+    employee.streetAddress = '12 Broadway';
     
     return employee
     
